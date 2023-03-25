@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: yellow;
+}
+
+nav ul {
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: x-large;
+    padding: 29px;
+}
+
+.main {
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square {
+    /* background-color: blue; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    /* background-color: green; */
+    padding: 2px;
+    border: solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.box:hover {
+    background-color: rgb(175, 53, 186);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /* flex-wrap: wrap; */
+}
+
+.reset {
+    padding: 3px;
+}
+
+.bt0{
+    border-top: 0;
+}
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+
+@media screen and (max-width:800px) {
+    .info{
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    .square {
+        /* background-color: blue; */
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
